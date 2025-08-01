@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9f9fc;
+  color: #111;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #4c51bf, #5a67d8);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+#tentang h2, #layanan h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#tentang p {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 280px;
+  text-align: center;
+}
+
+footer {
+  background: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
