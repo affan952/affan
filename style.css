@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -33,22 +34,22 @@ header p {
   padding: 2rem 1rem;
 }
 
-#tentang h2, #layanan h2 {
-  font-size: 1.8rem;
+.about, .services {
   text-align: center;
-  margin-bottom: 1rem;
-  position: relative;
 }
 
-#tentang p, .about p, .services p {
+.about p, .services p, #tentang p {
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
   color: #333;
 }
 
-.about, .services {
+#tentang h2, #layanan h2 {
+  font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .cards {
