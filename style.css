@@ -28,6 +28,19 @@ header p {
   font-size: 1.2rem;
 }
 
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #4c51bf;
+  font-weight: bold;
+}
+
 .container {
   max-width: 960px;
   margin: auto;
