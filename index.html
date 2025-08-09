@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ahmad Affan Imanullah</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Affan Imanullah - Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
+  <header class="hero" style="background-image: url('img/portfolio-bg.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
       <h1>Ahmad Affan Imanullah</h1>
       <p>Junior Web Developer • Lulusan SMK RPL</p>
-      <a href="halaman2.html" class="btn">Lihat Proyek →</a>
+      <a href="https://wa.me/6282218917804" class="btn">Hubungi Saya</a>
+      <a href="halaman2.html" class="btn btn-alt">Lihat Proyek</a>
     </div>
   </header>
 
-  <section class="container">
-    <h2>Tentang Saya</h2>
-    <p>Saya lulusan SMK Rekayasa Perangkat Lunak yang antusias membantu UKM dan profesional membangun website sederhana, landing page, atau blog dengan cepat dan harga terjangkau.</p>
+  <section class="about" data-aos="fade-right">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>Saya membantu UKM dan profesional membangun website sederhana, landing page, atau blog dengan cepat dan harga terjangkau.</p>
+    </div>
+  </section>
+
+  <section class="services" data-aos="fade-left">
+    <div class="container">
+      <h2>Layanan</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Website Profil Usaha</h3>
+          <p>Menampilkan info bisnis UKM secara online</p>
+        </div>
+        <div class="card">
+          <h3>Landing Page Produk</h3>
+          <p>Halaman promosi + form pemesanan</p>
+        </div>
+        <div class="card">
+          <h3>Instalasi WordPress</h3>
+          <p>Pemasangan tema, plugin & setting awal</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Affan Web Dev • Dibuat dengan HTML & CSS</p>
+    <p>&copy; 2025 Affan Web Dev • Dibuat dengan HTML, CSS, dan AOS Animation</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

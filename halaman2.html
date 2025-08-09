@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Proyek Sepatu Adidas</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyek Saya</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Proyek - Sepatu Adidas</h1>
-      <p>Koleksi landing page produk Adidas</p>
-      <a href="index.html" class="btn">← Kembali ke Beranda</a>
+  <header class="hero small">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Proyek Saya</h1>
+      <p>Kumpulan proyek yang pernah saya buat</p>
     </div>
   </header>
 
-  <section class="container cards">
-    <div class="card">
-      <img src="img/sepatu1.png" alt="Sepatu 1">
-      <p>Adidas Putih Biru</p>
-    </div>
-    <div class="card">
-      <img src="img/sepatu2.png" alt="Sepatu 2">
-      <p>Adidas Hitam Orange</p>
-    </div>
-    <div class="card">
-      <img src="img/sepatu3.png" alt="Sepatu 3">
-      <p>Adidas Putih Hitam</p>
-    </div>
-    <div class="card">
-      <img src="img/sepatu4.png" alt="Sepatu 4">
-      <p>Adidas Hijau Sport</p>
-    </div>
-    <div class="card">
-      <img src="img/sepatu5.png" alt="Sepatu 5">
-      <p>Adidas Kuning Retro</p>
-    </div>
-    <div class="card">
-      <img src="img/sepatu6.png" alt="Sepatu 6">
-      <p>Adidas Cream Italy</p>
+  <section class="projects">
+    <div class="container">
+      <div class="project-card" data-aos="zoom-in">
+        <img src="img/sepatu1.png" alt="Sepatu Adidas 1">
+        <h3>Website Toko Sepatu Adidas</h3>
+        <p>Landing page promosi produk sepatu Adidas Ultraboost dengan katalog produk dan form pemesanan online.</p>
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="img/sepatu2.png" alt="Sepatu Adidas 2">
+        <h3>Katalog Sepatu Online</h3>
+        <p>Website katalog untuk menampilkan berbagai model sepatu Adidas terbaru.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Affan Web Dev • Dibuat dengan HTML & CSS</p>
+    <p><a href="index.html" style="color:white;">&larr; Kembali ke Beranda</a></p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
