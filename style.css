@@ -1,38 +1,127 @@
 
-:root{
-  --bg:#ffffff; --fg:#0b1220; --muted:#6b7280; --accent:#0ea5a4; --card:#f8fafc;
+/* style.css */
+/* Tema Gelap Elegan */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
-*{box-sizing:border-box}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; margin:0; color:var(--fg); background:var(--bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
-.container{max-width:1100px;margin:0 auto;padding:24px;}
-.site-header{border-bottom:1px solid #eee; background:var(--bg); position:sticky; top:0; z-index:30;}
-.site-header .container{display:flex;align-items:center;justify-content:space-between;}
-.brand{font-weight:700;text-decoration:none;color:var(--fg);}
-.nav .btn{margin-left:10px;text-decoration:none;padding:8px 12px;border-radius:8px;border:1px solid #e6e7ea;background:transparent;cursor:pointer;}
-.btn.primary{background:var(--accent);color:white;border:0;}
-.btn.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);}
-.btn.small{padding:6px 8px;font-size:13px;}
 
-.hero{padding:48px 0;}
-.hero-inner{display:flex;gap:24px;align-items:center;}
-.hero h1{margin:0 0 12px 0;font-size:28px;}
-.hero p{margin:0 0 18px 0;color:var(--muted);}
-.hero-card{width:220px;height:220px;border-radius:12px;background:var(--card);display:flex;align-items:center;justify-content:center;}
-.hero-card img{width:80%;opacity:0.9;border-radius:8px;}
+header {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid gold;
+}
 
-.cards .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px;}
-.card{padding:16px;border-radius:12px;background:var(--card);border:1px solid #eee;}
-.project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;}
-.project{padding:14px;border-radius:10px;border:1px solid #eee;background:var(--card);}
+header h1 {
+    color: gold;
+    margin: 0;
+}
 
-.stats{display:flex;gap:18px;padding:24px 0;align-items:center;justify-content:center;}
-.stat{background:var(--card);padding:14px;border-radius:10px;text-align:center;border:1px solid #eee;width:140px;}
-.stat .num{font-weight:700;font-size:20px;}
-.site-footer{border-top:1px solid #eee;padding:18px 0;margin-top:36px;background:var(--bg);}
+nav a {
+    color: #f5f5f5;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-.light{--bg:#ffffff;--fg:#0b1220;--muted:#6b7280;--card:#f8fafc;--accent:#0ea5a4;}
-.dark{--bg:#071022;--fg:#e6eef6;--muted:#9fb3c8;--card:#081426;--accent:#06b6d4;}
-@media (max-width:800px){
-  .hero-inner{flex-direction:column;align-items:flex-start;}
-  .hero-card{width:160px;height:160px;}
+nav a:hover {
+    color: gold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Proyek Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    margin: 10px;
+    color: gold;
+}
+
+.project-card p {
+    margin: 10px;
+    color: #ddd;
+}
+
+/* Pricing Table */
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-plan {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.pricing-plan:hover {
+    border-color: gold;
+    transform: translateY(-5px);
+}
+
+.pricing-plan h3 {
+    color: gold;
+}
+
+.pricing-plan p {
+    color: #ccc;
+}
+
+.price {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #00bfff;
+}
+
+button {
+    background-color: gold;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e6c200;
 }
