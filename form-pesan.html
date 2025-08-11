@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form Pesan — Affan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <header class="site-header"><div class="container"><a class="brand" href="index.html">Affan Studio</a></div></header>
+  <main class="container">
+    <h1>Form Pesan</h1>
+    <p>Isi form di bawah untuk memesan layanan. (Sementara, form ini hanya contoh; untuk produksi gunakan Formspree, Google Forms, atau backend.)</p>
+    <form id="orderForm">
+      <label>Nama<br/><input type="text" name="name" required /></label><br/><br/>
+      <label>Email / WA<br/><input type="text" name="contact" required /></label><br/><br/>
+      <label>Layanan yang diinginkan<br/>
+        <select name="service">
+          <option>Landing Page</option>
+          <option>Toko Online</option>
+          <option>Maintenance & SEO</option>
+        </select>
+      </label><br/><br/>
+      <label>Pesan / Catatan<br/><textarea name="note"></textarea></label><br/><br/>
+      <button type="submit" class="btn primary">Kirim</button>
+    </form>
+
+    <div id="sent" style="display:none;margin-top:18px;" class="card">Terima kasih! Form telah dikirim (contoh).</div>
+  </main>
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      // For now just show a "sent" message. Replace with real integration later.
+      document.getElementById('sent').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

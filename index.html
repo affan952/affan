@@ -1,57 +1,115 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmad Affan Imanullah - Portofolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Affan — Portofolio</title>
+  <meta name="description" content="Portofolio Ahmad Affan Imanullah — jasa pembuatan website & produk digital." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="hero" style="background-image: url('img/portfolio-bg.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Ahmad Affan Imanullah</h1>
-      <p>Junior Web Developer • Lulusan SMK RPL</p>
-      <a href="https://wa.me/6282218917804" class="btn">Hubungi Saya</a>
-      <a href="halaman2.html" class="btn btn-alt">Lihat Proyek</a>
+<body class="light">
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Affan Studio</a>
+      <nav class="nav">
+        <button id="langToggle" class="btn small">EN</button>
+        <button id="darkToggle" class="btn small">🌙</button>
+        <a href="files/CV-Affan.pdf" class="btn" id="downloadCv" download>Download CV</a>
+        <a href="form-pesan.html" class="btn primary">Pesan Sekarang</a>
+      </nav>
     </div>
   </header>
 
-  <section class="about" data-aos="fade-right">
-    <div class="container">
-      <h2>Tentang Saya</h2>
-      <p>Saya membantu UKM dan profesional membangun website sederhana, landing page, atau blog dengan cepat dan harga terjangkau.</p>
-    </div>
-  </section>
-
-  <section class="services" data-aos="fade-left">
-    <div class="container">
-      <h2>Layanan</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Website Profil Usaha</h3>
-          <p>Menampilkan info bisnis UKM secara online</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1 id="heroTitle">Hai, saya Affan — Pembuat Website</h1>
+          <p id="heroDesc">Saya membuat website landing page dan toko online sederhana yang cepat & responsive.</p>
+          <div class="cta">
+            <a href="form-pesan.html" class="btn primary">Pesan Sekarang</a>
+            <a href="#projects" class="btn ghost">Lihat Proyek</a>
+          </div>
         </div>
-        <div class="card">
-          <h3>Landing Page Produk</h3>
-          <p>Halaman promosi + form pemesanan</p>
-        </div>
-        <div class="card">
-          <h3>Instalasi WordPress</h3>
-          <p>Pemasangan tema, plugin & setting awal</p>
+        <div class="hero-card">
+          <img src="assets/profile-placeholder.png" alt="Profil" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Affan Web Dev • Dibuat dengan HTML, CSS, dan AOS Animation</p>
+    <section id="services" class="container cards">
+      <h2>Jasa</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Website Landing Page</h3>
+          <p>Desain modern, mobile-friendly, dan cepat loading.</p>
+        </article>
+        <article class="card">
+          <h3>Toko Online</h3>
+          <p>Integrasi pembayaran dan manajemen produk sederhana.</p>
+        </article>
+        <article class="card">
+          <h3>Maintenance & SEO</h3>
+          <p>Update, backup, dan optimasi agar mudah ditemukan di Google.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Proyek</h2>
+      <div class="project-list">
+        <article class="project">
+          <h3>Contoh: Landing Page UMKM</h3>
+          <p>Landing page sederhana untuk promosi produk lokal.</p>
+          <a href="#" class="btn small">Detail</a>
+        </article>
+        <article class="project">
+          <h3>Contoh: Toko Online Sederhana</h3>
+          <p>Integrasi produk, checkout, dan konfirmasi via email/WA.</p>
+          <a href="#" class="btn small">Detail</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container cards">
+      <h2>Testimoni</h2>
+      <div class="grid">
+        <blockquote class="card">"Pelayanan cepat dan hasil memuaskan." — Budi</blockquote>
+        <blockquote class="card">"Desainnya modern, omzet naik." — Sari</blockquote>
+      </div>
+    </section>
+
+    <section id="stats" class="container stats">
+      <div class="stat">
+        <div class="num" id="visitors">—</div>
+        <div class="label">Pengunjung</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="projectsCount">12</div>
+        <div class="label">Proyek Selesai</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="clientsCount">8</div>
+        <div class="label">Klien</div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>Tentang Saya</h2>
+      <p>Saya membuat website menggunakan HTML, CSS, dan sedikit JavaScript. Fokus pada kecepatan dan pengalaman pengguna.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Affan Studio — Buat website yang jualan.</small>
+      <div class="socials">
+        <a href="#" target="_blank">Instagram</a> · <a href="#" target="_blank">WhatsApp</a>
+      </div>
+    </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
