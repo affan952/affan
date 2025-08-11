@@ -1,48 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paket Layanan - Affan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paket Layanan — Affan</title><link rel="stylesheet" href="style.css"></head>
 <body>
+  <header class="header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="paket.html">Paket Layanan</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="statistik.html">Statistik</a>
+        <button id="langToggle" class="lang-toggle">EN</button>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <h1>Paket Layanan</h1>
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="proyek.html">Proyek</a>
-            <a href="paket.html">Paket Layanan</a>
-        </nav>
-    </header>
+  <main class="container">
+    <section class="panel fade-slide" data-key="paket_title"><h2>Paket Layanan</h2><p class="muted">Pilih paket yang sesuai — klik tombol untuk langsung chat via WhatsApp.</p></section>
 
-    <main class="container-center">
-        <div class="paket">
-            <h2>Paket Basic</h2>
-            <p>Website sederhana untuk personal / UMKM.</p>
-            <p class="harga">Rp 500.000</p>
-            <a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20ingin%20order%20Paket%20Basic" target="_blank">Order via WhatsApp</a>
-        </div>
+    <div class="paket-row">
+      <div class="paket fade-slide"><h3>Basic</h3><p>Landing page / 1 halaman</p><div class="price">Rp 500.000</div><a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20ingin%20memesan%20Paket%20Basic%20(landing%20page)" target="_blank">Pesan via WhatsApp</a></div>
 
-        <div class="paket">
-            <h2>Paket Pro</h2>
-            <p>Website profesional dengan fitur lengkap.</p>
-            <p class="harga">Rp 1.500.000</p>
-            <a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20ingin%20order%20Paket%20Pro" target="_blank">Order via WhatsApp</a>
-        </div>
+      <div class="paket fade-slide"><h3>Business</h3><p>Website 3–5 halaman, SEO dasar</p><div class="price">Rp 1.500.000</div><a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20ingin%20memesan%20Paket%20Business" target="_blank">Pesan via WhatsApp</a></div>
 
-        <div class="paket">
-            <h2>Paket Custom</h2>
-            <p>Website sesuai kebutuhan Anda.</p>
-            <p class="harga">Mulai Rp 2.000.000</p>
-            <a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20ingin%20order%20Paket%20Custom" target="_blank">Order via WhatsApp</a>
-        </div>
-    </main>
+      <div class="paket fade-slide"><h3>Premium</h3><p>Website custom + integrasi pembayaran</p><div class="price">Rp 3.000.000+</div><a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20ingin%20memesan%20Paket%20Premium" target="_blank">Pesan via WhatsApp</a></div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Affan. All rights reserved.</p>
-    </footer>
+    <p style="margin-top:18px;"><a href="index.html" class="btn-wa">Kembali ke Beranda</a></p>
+  </main>
 
+  <div class="footer">© 2025 Affan</div>
+  <script src="script.js"></script>
 </body>
 </html>

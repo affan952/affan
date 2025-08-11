@@ -1,45 +1,51 @@
-
-/* Basic interactions: dark mode, language toggle, visitor counter (CountAPI), year */
-document.addEventListener('DOMContentLoaded', ()=>{
-  const darkToggle = document.getElementById('darkToggle');
-  const langToggle = document.getElementById('langToggle');
-  const yearEl = document.getElementById('year');
-  const visitorsEl = document.getElementById('visitors');
-  const heroTitle = document.getElementById('heroTitle');
-  const heroDesc = document.getElementById('heroDesc');
-  const downloadCv = document.getElementById('downloadCv');
-
-  yearEl.textContent = new Date().getFullYear();
-
-  // Dark mode (persist in localStorage)
-  const applyMode = (mode)=>{ document.body.className = mode; localStorage.setItem('site-mode', mode); darkToggle.textContent = mode === 'dark' ? '☀️' : '🌙'; }
-  const saved = localStorage.getItem('site-mode') || 'light'; applyMode(saved);
-  darkToggle.addEventListener('click', ()=> applyMode(document.body.className === 'dark' ? 'light' : 'dark'));
-
-  // Language toggle (simple two-language strings)
-  let lang = localStorage.getItem('site-lang') || 'id';
-  const setLang = (l)=>{
-    lang = l; localStorage.setItem('site-lang', l);
-    if(l === 'en'){
-      heroTitle.textContent = 'Hi, I\'m Affan — Web Developer';
-      heroDesc.textContent = 'I build fast, responsive landing pages and online shops.';
-      langToggle.textContent = 'ID';
-      downloadCv.textContent = 'Download CV';
-    } else {
-      heroTitle.textContent = 'Hai, saya Affan — Pembuat Website';
-      heroDesc.textContent = 'Saya membuat website landing page dan toko online sederhana yang cepat & responsive.';
-      langToggle.textContent = 'EN';
-      downloadCv.textContent = 'Download CV';
-    }
+document.addEventListener('DOMContentLoaded', function(){
+  const langData = {
+    'title': {
+      'id':'Halo — Saya Affan',
+      'en':"Hi — I'm Affan"
+    },
+    'subtitle': {
+      'id':'Saya membuat website cepat, responsif, dan yang bantu klien jualan online.',
+      'en':'I build fast, responsive websites that help clients sell online.'
+    },
+    'paket_title': {'id':'Paket Layanan','en':'Service Packages'},
+    'proyek_title': {'id':'Proyek Terpilih','en':'Selected Projects'},
+    'testi_title': {'id':'Testimoni Klien','en':'Client Testimonials'},
+    'stat_title': {'id':'Statistik & Pencapaian','en':'Statistics & Achievements'},
+    'chat_btn': {'id':'Chat via WhatsApp','en':'Chat via WhatsApp'},
+    'nav_home': {'id':'Beranda','en':'Home'}
   };
-  setLang(lang);
-  langToggle.addEventListener('click', ()=> setLang(lang === 'id' ? 'en' : 'id'));
 
-  // Visitor counter using CountAPI (https://countapi.xyz) - public free counter
-  // Key namespace: affan-site, key: main-page. You can change to your own domain later.
-  fetch('https://api.countapi.xyz/hit/affan-site/main-page')
-    .then(r=>r.json()).then(data=>{
-      if(data && data.value) visitorsEl.textContent = data.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    }).catch(err=>{ visitorsEl.textContent = '—'; });
+  function applyLang(lang){
+    document.querySelectorAll('[data-key]').forEach(el=>{
+      const key = el.getAttribute('data-key');
+      if(langData[key] && langData[key][lang]) {
+        el.textContent = langData[key][lang];
+      }
+    });
+    localStorage.setItem('site-lang', lang);
+    const togg = document.getElementById('langToggle');
+    if(togg) togg.textContent = lang === 'id' ? 'EN' : 'ID';
+  }
 
+  const initialLang = localStorage.getItem('site-lang') || 'id';
+  applyLang(initialLang);
+
+  const btn = document.getElementById('langToggle');
+  if(btn) btn.addEventListener('click', ()=>{
+    const current = localStorage.getItem('site-lang') || 'id';
+    applyLang(current === 'id' ? 'en' : 'id');
+  });
+
+  // Animasi Scroll
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold:0.15});
+
+  document.querySelectorAll('.fade-slide').forEach(el=> obs.observe(el));
 });

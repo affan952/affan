@@ -1,29 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyek - Affan</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Proyek — Affan</title><link rel="stylesheet" href="style.css"></head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="proyek.html">Proyek</a></li>
-                <li><a href="paket.html">Paket Layanan</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="content">
-        <h1>Proyek Terbaru</h1>
-        <p>Berikut beberapa proyek website yang telah saya kerjakan.</p>
-        <ul>
-            <li>Website UMKM Kopi</li>
-            <li>Landing Page Produk Herbal</li>
-            <li>Portofolio Fotografer</li>
-        </ul>
+  <header class="header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="paket.html">Paket Layanan</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="statistik.html">Statistik</a>
+        <button id="langToggle" class="lang-toggle">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel fade-slide" data-key="proyek_title"><h2>Proyek Terpilih</h2><p class="muted">Beberapa contoh website yang sudah saya buat</p></section>
+
+    <section class="panel fade-slide" style="text-align:left;">
+      <div class="paket"><h3>Landing Page Kopi Lokal</h3><p>Landing page promosi + form order WA.</p></div>
+      <div style="height:12px"></div>
+      <div class="paket"><h3>Toko Online Fashion</h3><p>Toko online kecil dengan katalog & konfirmasi.</p></div>
+      <p style="margin-top:12px;"><a href="index.html" class="btn-wa">Kembali ke Beranda</a></p>
     </section>
+  </main>
+
+  <div class="footer">© 2025 Affan</div>
+  <script src="script.js"></script>
 </body>
 </html>

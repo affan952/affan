@@ -1,25 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Affan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Affan — Portofolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="proyek.html">Proyek</a></li>
-                <li><a href="paket.html">Paket Layanan</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <img src="logo.png" alt="Foto Profil" class="profile-pic">
-        <h1>Affan - Web Developer</h1>
-        <p>Membuat website profesional untuk UMKM, bisnis, dan personal branding.</p>
+  <header class="header">
+    <div class="inner">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="paket.html">Paket Layanan</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="testimoni.html">Testimoni</a>
+        <a href="statistik.html">Statistik</a>
+        <button id="langToggle" class="lang-toggle">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel fade-slide" data-key="title"><h1>Halo — Saya Affan</h1></section>
+    <section class="panel fade-slide" data-key="subtitle"><p>Saya membuat website cepat, responsif, dan yang bantu klien jualan online.</p>
+      <p style="margin-top:14px;"><a class="btn-wa" href="https://wa.me/6282218917804?text=Halo%20Affan,%20saya%20mau%20tanya%20tentang%20jasa%20pembuatan%20website" target="_blank" data-key="chat_btn">Chat via WhatsApp</a></p>
     </section>
+  </main>
+
+  <div class="footer">© 2025 Affan</div>
+  <script src="script.js"></script>
 </body>
 </html>
