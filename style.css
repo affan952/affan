@@ -1,127 +1,43 @@
-
-/* style.css */
-/* Tema Gelap Elegan */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #f5f5f5;
-    line-height: 1.6;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
-
 header {
-    background-color: #1c1c1c;
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 2px solid gold;
+    background-color: #222;
+    padding: 1rem;
 }
-
-header h1 {
-    color: gold;
-    margin: 0;
-}
-
-nav a {
-    color: #f5f5f5;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: gold;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-/* Proyek Grid */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card img {
-    width: 100%;
-    display: block;
-}
-
-.project-card h3 {
-    margin: 10px;
-    color: gold;
-}
-
-.project-card p {
-    margin: 10px;
-    color: #ddd;
-}
-
-/* Pricing Table */
-.pricing {
+nav ul {
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
-
-.pricing-plan {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    min-width: 250px;
-    max-width: 300px;
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
     text-align: center;
-    border: 2px solid transparent;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+    padding: 2rem;
 }
-
-.pricing-plan:hover {
-    border-color: gold;
-    transform: translateY(-5px);
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
 }
-
-.pricing-plan h3 {
-    color: gold;
+.content {
+    padding: 2rem;
 }
-
-.pricing-plan p {
-    color: #ccc;
-}
-
-.price {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #00bfff;
-}
-
-button {
-    background-color: gold;
-    color: #121212;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #e6c200;
+.paket {
+    background: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
